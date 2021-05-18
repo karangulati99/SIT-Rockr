@@ -1,0 +1,13 @@
+<div>
+    <div *ngFor="let album of albumList">
+        <div>
+            Album type: {{album.album_type}}
+        </div>
+        <div>
+            Album name: {{album.name}}
+        </div>
+        <div>
+            <button (click)="openAlbum(album.href)">Open</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+<div class="main-container">
+    <header class="header-container">
+        <div class="parent-div">
+            <div class="img-div">
+                <img class="logo-img" src="https://yourchennai.com/wp-content/uploads/2016/12/Fynd-Logo.png" alt="logo">
+            </div>
+            <nav class="nav-div">
+                <div class="cat-div" *ngFor="let cat of nav_content">
+                    <div class="men-div">
+                    <div class="cat-name-div">
+                        Men
+                    </div>
+                    <div class="men-dropdwn">
+                        <div class="cat-title">
+                            {{cat.men.name}}
+                        </div>
+                        <div *ngFor="let type of cat.men.types" class="cat-type">
+                            <ul>
+                                <li>
+                                    {{type}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="women-div">
+                    <div class="cat-name-div">
+                        Women
+                    </div>
+                    <div class="women-dropdwn">
+                        <div class="cat-title">
+                            {{cat.women.name}}
+                        </div>
+                        <div *ngFor="let type of cat.women.types" class="cat-type">
+                            <ul>
+                                <li>
+                                    {{type}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="kids-div">
+                    <div class="cat-name-div">
+                        Kids
+                    </div>
+                    <div class="kids-dropdwn">
+                        <div class="cat-title">
+                            {{cat.kids.name}}
+                        </div>
+                        <div *ngFor="let type of cat.kids.types" class="cat-type">
+                            <ul>
+                                <li>
+                                    {{type}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="others-div">
+                    <div class="cat-name-div">
+                        Others
+                    </div>
+                    <div class="others-dropdwn">
+                        <div class="cat-title">
+                            {{cat.others.name}}
+                        </div>
+                        <div *ngFor="let type of cat.others.types" class="cat-type">
+                            <ul>
+                                <li>
+                                    {{type}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+</div>
