@@ -21,7 +21,8 @@ export class HeaderComponent implements OnInit {
             "Jazz",
             "Soul Soothers",
             "Romantic",
-            "Instrumental",          ]
+            "Instrumental",          
+          ]
         },
         Language : {
           name: "Break the Barrier",

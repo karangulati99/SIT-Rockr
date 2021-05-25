@@ -1,13 +1,18 @@
-<div>
-    <div *ngFor="let album of albumList">
-        <div>
+<div class="parent-cont">
+<div class="album-parent disp-flx">
+    <div *ngFor="let album of albumList" class="album-cont cp">
+        <div class="img-parent">
+            <img src="{{album.images[1].url}}" alt="album-img" class="alb-img">
+        </div>
+        <div class="alb-type">
             Album type: {{album.album_type}}
         </div>
-        <div>
+        <div class="alb-name">
             Album name: {{album.name}}
         </div>
-        <div>
+        <div class="alb-btn">
             <button (click)="openAlbum(album.href)">Open</button>
         </div>
     </div>
+</div>
 </div>
