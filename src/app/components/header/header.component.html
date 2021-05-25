@@ -2,19 +2,19 @@
     <header class="header-container">
         <div class="parent-div">
             <div class="img-div">
-                <img class="logo-img" src="https://yourchennai.com/wp-content/uploads/2016/12/Fynd-Logo.png" alt="logo">
+                <img class="logo-img" src="https://miro.medium.com/max/875/1*Up8iD0NvJXWUAAht-ihAdA.jpeg" alt="logo">
             </div>
             <nav class="nav-div">
                 <div class="cat-div" *ngFor="let cat of nav_content">
                     <div class="men-div">
                     <div class="cat-name-div">
-                        Men
+                        Genre
                     </div>
                     <div class="men-dropdwn">
                         <div class="cat-title">
-                            {{cat.men.name}}
+                            {{cat.Genre.name}}
                         </div>
-                        <div *ngFor="let type of cat.men.types" class="cat-type">
+                        <div *ngFor="let type of cat.Genre.types" class="cat-type">
                             <ul>
                                 <li>
                                     {{type}}
@@ -25,13 +25,13 @@
                 </div>
                 <div class="women-div">
                     <div class="cat-name-div">
-                        Women
+                        Language
                     </div>
                     <div class="women-dropdwn">
                         <div class="cat-title">
-                            {{cat.women.name}}
+                            {{cat.Language.name}}
                         </div>
-                        <div *ngFor="let type of cat.women.types" class="cat-type">
+                        <div *ngFor="let type of cat.Language.types" class="cat-type">
                             <ul>
                                 <li>
                                     {{type}}
@@ -42,13 +42,13 @@
                 </div>
                 <div class="kids-div">
                     <div class="cat-name-div">
-                        Kids
+                        Mood
                     </div>
                     <div class="kids-dropdwn">
                         <div class="cat-title">
-                            {{cat.kids.name}}
+                            {{cat.Mood.name}}
                         </div>
-                        <div *ngFor="let type of cat.kids.types" class="cat-type">
+                        <div *ngFor="let type of cat.Mood.types" class="cat-type">
                             <ul>
                                 <li>
                                     {{type}}
@@ -59,13 +59,13 @@
                 </div>
                 <div class="others-div">
                     <div class="cat-name-div">
-                        Others
+                        Charts
                     </div>
                     <div class="others-dropdwn">
                         <div class="cat-title">
-                            {{cat.others.name}}
+                            {{cat.Charts.name}}
                         </div>
-                        <div *ngFor="let type of cat.others.types" class="cat-type">
+                        <div *ngFor="let type of cat.Charts.types" class="cat-type">
                             <ul>
                                 <li>
                                     {{type}}

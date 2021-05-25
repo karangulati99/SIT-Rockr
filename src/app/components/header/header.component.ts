@@ -13,42 +13,46 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.nav_content = [{
-        men: {
-          name: "Topwear",
+        Genre: {
+          name: "Albums",
           types: [
-            "T-Shirts",
-            "Casual Shirts",
-            "Formal Shirts",
-            "Sweatshirts",
-            "Sweaters",
-            "Jackets",
-            "Blazers & Coats",
-            "Suits",
-            "Rain Jackets"
+            "Rock",
+            "Pop",
+            "Jazz",
+            "Soul Soothers",
+            "Romantic",
+            "Instrumental",          ]
+        },
+        Language : {
+          name: "Break the Barrier",
+          types: [
+            "English",
+            "Hindi",
+            "Punjabi",
+            "Marathi",
+            "Gujrati",
+            "Spanish",
+                      ]
+        },
+        Mood : {
+          name: "Playlist",
+          types: [
+            "Sufi",
+            "Party",
+            "Good Vibes",
+            "Workout",
+            "Drive Out",
           ]
         },
-        women : {
-          name: "Innerwear",
+        Charts : {
+          name: "Popular",
           types: [
-            "Bra",
-            "Panty",
-            "Lingerie"
-          ]
-        },
-        kids : {
-          name: "Toys",
-          types: [
-            "Aeroplane",
-            "Helicopter",
-            "Cars"
-          ]
-        },
-        others : {
-          name: "Electronics",
-          types: [
-            "Phone",
-            "Earphones",
-            "Headphones"
+            "Top 10",
+            "Top 25",
+            "Top 50",
+            "Top 100",
+            "Top English",
+            "Top Hindi",
           ]
         }
       }
