@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,9 @@ export class HeaderComponent implements OnInit {
 
   nav_content: Array<Object>;
 
-  constructor() { }
+  constructor(
+    public router: Router
+  ) { }
 
   ngOnInit(): void {
     this.nav_content = [{
@@ -59,6 +62,14 @@ export class HeaderComponent implements OnInit {
         }
       }
     ]
+  }
+
+  onHomeClick(){
+    this.router.navigate(['/home'])
+  }
+
+  openContactPage(){
+    this.router.navigate(['/contact'])
   }
 
 }

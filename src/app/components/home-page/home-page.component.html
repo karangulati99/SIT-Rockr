@@ -1,6 +1,9 @@
 <div class="parent-cont">
+    <div class="album-header">
+        All top albums, in ONE PLACE!
+    </div>
 <div class="album-parent disp-flx">
-    <div *ngFor="let album of albumList" class="album-cont cp">
+    <div *ngFor="let album of albumList" class="album-cont">
         <div class="img-parent">
             <img src="{{album.images[1].url}}" alt="album-img" class="alb-img">
         </div>
@@ -11,7 +14,9 @@
             Album name: {{album.name}}
         </div>
         <div class="alb-btn">
-            <button (click)="openAlbum(album.href)">Open</button>
+            <button class="btn cp" (click)="openAlbum(album)">
+                <div class="btn-txt">Open</div>
+            </button>
         </div>
     </div>
 </div>

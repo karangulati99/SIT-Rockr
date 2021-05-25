@@ -24,9 +24,9 @@ export class HomePageComponent implements OnInit {
   }
 
   openAlbum(url){
-    this.spotify.getAlbum(url).then((res) => {
-      console.log("ALBUM: ", res);
-      
+    this.spotify.getAlbum(url.href).then((res: any) => {
+      console.log("ALBUM: ", res.href);
+      window.open(url.uri, "_blank");
     })
   }
 

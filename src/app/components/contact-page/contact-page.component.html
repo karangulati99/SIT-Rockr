@@ -1,0 +1,43 @@
+<div class="container disp-flx">
+    <div class="form-div">
+    <form>
+        <div class="disp-flx-col">
+
+            <div>
+                <div>
+                    <label for="fname">Full Name</label>
+                </div>
+                <input [(ngModel)]="nameVal" type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+
+            <div>
+                <div>
+                    <label for="lname">Email</label>
+                </div>
+                <input [(ngModel)]="emailVal" type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+
+            <div>
+                <div>
+                    <label for="fname">Phone</label>
+                </div>
+                <input [(ngModel)]="phoneVal" type="number" id="phone" name="phone" placeholder="Your phone..">
+            </div>
+
+            <div>
+                <div>
+                    <label for="subject">Message</label>
+                </div>
+                <textarea [(ngModel)]="messageVal" id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+
+            <div class="btn-div">
+                <button class="btn cp" (click)="onSubmit()">Send</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="img-div">
+    <img src="../../../assets/contact.png" class="cont-img" alt="Contac Us">
+</div>
+</div>
