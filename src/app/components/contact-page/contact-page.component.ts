@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SpotifyService } from 'src/app/services/spotify.service';
 
 @Component({
@@ -14,7 +15,8 @@ export class ContactPageComponent implements OnInit {
   messageVal: string = "";
 
   constructor(
-    public spotify: SpotifyService
+    public spotify: SpotifyService,
+    public router: Router
   ) { }
 
   ngOnInit(): void {
@@ -30,7 +32,8 @@ export class ContactPageComponent implements OnInit {
 
     this.spotify.contact(payload).then((res) => {
       console.log("Contact ", res);
-      
+      alert("We've received your message, thank you!");
+      this.router.navigate(['/home']);
     })
   }
 }

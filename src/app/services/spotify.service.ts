@@ -51,4 +51,18 @@ export class SpotifyService {
       return res;
     })
   }
+
+  contact(payload){
+    let formData: FormData = new FormData();
+    formData.append('email', payload.email);
+    formData.append('name', payload.name);
+    formData.append('message', payload.message);
+    formData.append('Phone_no', payload.phone);
+
+    return this.http.post('https://testbackend123.pythonanywhere.com/message/', formData)
+    .toPromise().then((res: any) => {
+      console.log(res);  
+      return res;    
+    })
+  }
 }
